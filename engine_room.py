@@ -1,0 +1,7 @@
+text = input('Enter some text: ')    
+print(text.upper())
+print(text.title())
+print(text.find('e'))
+print(text.count('e'))
+print(text.replace('e','z'))
+print(len(text))
