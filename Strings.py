@@ -100,3 +100,61 @@ print(text)
 new_text = text.replace('world','planet')
 print(new_text)
 print(text)
+
+fruit = 'applllllleeeeeee'
+print(fruit.replace('e','E'))
+print(fruit.replace('z','E'))    # No change because 'z' does not exist in the original string
+
+# strip() removes the blank spaces before and after the first and last character respectively 
+
+msg = '   Hello World    '
+print(msg)
+print(msg.strip())
+
+# Connecting two strings together
+# Simply use + to combine strings
+
+first = 'Bill'
+last = 'Musk'
+name = first + last
+print(name)
+
+name = first + ' ' + last
+print(name)
+
+name = first + '    ' + last
+print(name)
+
+# Another way to do the same 
+
+
+name = '{}{}'.format(first, last)
+print(name)
+
+name = '{} {}'.format(first, last)
+print(name)
+
+name = '  {}     {}  '.format(first, last)
+print(name)
+
+name = '  {}     {}  '.format(last, first)
+print(name)
+
+# {} is a special placeholder, that can be used within string, and passing the desired variable with .format()
+
+# Yet another way to do the same (short and sweet)
+# This is called 'f string'. Simply pass the variable name inside f'' within {}
+
+name = f'{first}{last}'
+print(name)
+
+name = f'{first} {last}'
+print(name)
+
+name = f'{first}    {last}'
+print(name)
+
+# You can use the string functions within fstrings
+
+name = f'{first.upper()} {last.lower()}'
+print(name)
